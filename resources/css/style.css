@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 60px;
+
+}
+
+.nav-menu {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 15px 20px;
+    width: 70%;
+    margin: 100px auto 0 auto;
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-menu  img {
+    position: absolute;
+    width: 5%; /* Atur besar foto */
+    height: auto;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 2px;
+    left: 0;
+    background-color: #d8ac1d;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.menu img{ 
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    /* Jarak dari tepi kanan */
+    transform: translateY(-50%);
+    width: 5%;
+    /* Atur besar foto */
+    height: auto;
+}
+
+.menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: black;
+}
+
+.btn-0 {
+    padding: 1rem 2rem;
+    font-family: imprima;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #f2ff00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-0:hover {
+    background-color: #e4de2a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h1 {
+    font-family: Judson;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    color: #000000;
+}
+
+header .image {
+    position: relative;
+}
+
+header .image::before {
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img {
+    width: 430px;
+    height: 478px;
+    margin: auto;
+    border-radius: 90px;
+}
+
+.welcome {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.welcome .judul {
+    font-family: judson;
+    display: inline-flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.welcome .pendahuluan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.pendahuluan p {
+    display: block;
+    flex-direction: column;
+    font-family: poppins;
+}
+
+.welcome img {
+    width: 450px;
+    height: 456px;
+    border-radius: 47px;
+}
+
+.judul h2 {
+    font-size: 58px;
+    letter-spacing: 0;
+    color: #333;
+}
+
+.welcome p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 1280px;
+    /* reduced from 1440px */
+    height: 900px;
+    /* reduced from 1024px */
+}
+
+.overlap-group {
+    position: relative;
+    width: 1220px;
+    /* reduced from 1370px */
+    height: 830px;
+    /* reduced from 938px */
+    top: 4px;
+    left: 30px;
+    /* reduced from 35px */
+}
+
+.rectangle {
+    position: absolute;
+    width: 1100px;
+    /* reduced from 1230px */
+    height: 600px;
+    /* reduced from 686px */
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222222;
+    border-radius: 5px;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 90px;
+    /* reduced from 106px */
+    left: 500px;
+    /* reduced from 571px */
+    font-family: "poppins", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 56px;
+    /* reduced from 64px */
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.img {
+    position: absolute;
+    width: 320px;
+    /* reduced from 360px */
+    height: 500px;
+    /* reduced from 559px */
+    top: 330px;
+    /* reduced from 379px */
+    left: 25px;
+    /* reduced from 31px */
+    object-fit: cover;
+
+}
+
+.img-2 {
+    position: absolute;
+    width: 460px;
+    /* reduced from 520px */
+    height: 500px;
+    /* reduced from 560px */
+    top: 200px;
+    /* reduced from 228px */
+    left: 375px;
+    /* reduced from 425px */
+    object-fit: cover;
+}
+
+.img-3 {
+    position: absolute;
+    width: 320px;
+    /* reduced from 360px */
+    height: 500px;
+    /* reduced from 559px */
+    top: 330px;
+    /* reduced from 379px */
+    left: 870px;
+    /* reduced from 979px */
+    object-fit: cover;
+}
+
+#facilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+    /* add this to position the rectangle and image absolutely */
+}
+
+#facilities .rectangle {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    height: 400px;
+    background-color: #ff9500ec;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    /* add this to position the rectangle absolutely */
+    top: 50%;
+    /* add this to center the rectangle vertically */
+    left: 50%;
+    /* add this to center the rectangle horizontally */
+    transform: translate(-50%, -50%);
+    /* add this to center the rectangle vertically and horizontally */
+}
+
+#facilities .rectangle .title {
+    font-size: 24px;
+    font-family: "pocppins", monospace;
+    font-weight: reguler;
+    position: relative;
+    top: 88px;
+    color: #ffffff;
+}
+
+#facilities .rectangle img {
+    width: 80px;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+#facilities .rectangle .images {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.kasur {
+    position: absolute;
+    top: calc(50% + 180px);
+    /* 50% + setengah tinggi rectangle */
+    left: 50%;
+    width: 1200px;
+    /* lebar sama dengan rectangle */
+    height: 400px;
+    /* tinggi sama dengan rectangle */
+    object-fit: cover;
+    /* agar gambar tetap proporsional */
+    transform: translate(-50%, 0);
+    /* menggeser gambar ke tengah secara horizontal */
+}
+
+
+
+/*ressponsif*/
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .image {
+        grid-area: 1/1/2/2;
+    }
+
+    .welcome {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .judul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+/* CSS untuk smartphone */
+@media (max-width: 600px) {
+    header .image::before {
+        display: none;
+    }
+
+    .judul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr 150px;
+    }
+}
